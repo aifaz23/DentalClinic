@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>2nd Avenue Dental</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-light py-4">
+      <div class="container">
+        <div class="le">
+          <a href="index.html" class="navbar-brand"
+            ><h2 class="title">2nd Avenue Dental</h2></a></div>
+          <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+         <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link"><h6>Home</h6></a>
+            </li>
+            <li class="nav-item">
+              <a href="team.html" class="nav-link"><h6>Meet Our Team</h6></a>
+            </li>
+            <li class="nav-item">
+              <a href="services.html" class="nav-link"><h6>Services</h6></a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link"><h6>Contact</h6></a>
+            </li>
+            <li class="nav-item current">
+              <a href="appointment.html" class="nav-link"><h6 id="cur">Request Appointment</h6></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row g-3">
+            <div class=" text-center mb-2">
+                <h3> Contact 2nd Avenue Dental</h3>
+                <h4 class="mb-3">Have any questions for us?</h4>
+                <form action="contact.html">
+                    <input type="submit" value="Ask Us" class="btn btn-dark"/>
+                </form>
+                <hr class="solid">
+            </div>
+            <h1 class="text-center mt-4 mb-4">REQUEST AN APPOINTMENT</h1>
+
+          <div class="col-md-8 mb-3">
+
+            <form name="formC" class=" stuff row g-3" onsubmit="appointDone()">
+              <div class="text-center col-md-12">
+                <p class="mb-5"><h3>Schedule Appointment</h3>
+                </p>
+            </div>
+                <div class="col-md-11">
+                    <label for="patient" class="form-label">Are you an existing patient?<sup class="mark">*</sup></label>
+                    <input type="radio" name="val" value="Yes" class="ml-2" required> Yes   
+                    <input type="radio" name="val" value="No" class=" ml-3"> No   
+                  </div>
+    
+                <div class="col-md-11 form-group">
+                  <label for="text2">Name<sup class="mark">*</sup></label> 
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <i class="fa fa-user"></i>
+                      </div>
+                    </div> 
+                    <input id="text2" name="text2" placeholder="Name" type="text" required="required" class="form-control">
+                  </div>
+                </div>
+                <div class="col-md-11 form-group">
+                    <label for="text1">Phone Number<sup class="mark">*</sup></label> 
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">
+                          <i class="fa fa-phone"></i>
+                        </div>
+                      </div> 
+                      <input id="text1" name="text1" placeholder="(xxx) xxx-xxxx" type="text" class="form-control" required="required">
+                    </div>
+                  </div>
+                  <div class=" col-md-11 form-group">
+                    <label for="text">Email<sup class="mark">*</sup></label> 
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">
+                          <i class="fa fa-envelope"></i>
+                        </div>
+                      </div> 
+                      <input id="text" name="text" placeholder="abc@gmail.com" type="email" required="required" class="form-control">
+                    </div>
+                  </div>
+                  <div class=" col-md-11 form-group">
+                    <label for="text4">Preferred Date</label> 
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">
+                          <i class="fa fa-calendar"></i>
+                        </div>
+                      </div> 
+                      <input id="text4" name="text4" placeholder="MM/DD/YYYY" type="date" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-md-11 form-group">
+                    <label for="text5">Preferred Time</label> 
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">
+                          <i class="fa fa-clock-o"></i>
+                        </div>
+                      </div> 
+                      <input id="text5" name="text5" type="time" placeholder="00:00" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-md-11 form-group">
+                    <label for="Message (Optional)">Comments</label> 
+                    <textarea id="Message (Optional)" placeholder="Message (Optional)" cols="40" rows="5" class="form-control"></textarea>
+                  </div> 
+                  <div class="col-md-12">
+                      <p class="text-center mb-3">
+                          <button type="submit" onclick="clicked()" class="btn btn-dark">Submit</button>
+                      </p>
+                  </div>
+            </form>
+          </div>
+
+          <div class="col-md-4">
+            <div class="ml-5">
+            <div class="col-md-12 red2">
+              <p class=" mb-5"><h3>Get In Touch</h3>
+              </p>
+          </div>
+            <div class="col-md-12 mt-2 mb-5">
+              <h5>Clinic Location</h5>
+              <p>2nd Avenue Dental, <br> 2nd Avenue Saskatoon Sk, <br>S7N 4A9 </p>
+            </div>
+
+            <div class=" col-md-12 mb-5">
+              <h5>Clinic Hours</h5>
+              <ul class="day">
+                <li class="listitems1">Monday</li>
+                <li class="listitems1">Tuesday</li>
+                <li class="listitems1">Wednesday</li>
+                <li class="listitems1">Thursday</li>
+                <li class="listitems1">Friday</li>
+                <li class="listitems1">Weekends</li>
+              </ul>
+              <ul class="time">
+                <li class="listitems">8:00am - 7:00pm</li>
+                <li class="listitems">8:00am - 7:00pm</li>
+                <li class="listitems">8:00am - 7:00pm</li>
+                <li class="listitems">8:00am - 7:00pm</li>
+                <li class="listitems">9:00am - 5:00pm</li>
+                <li class="listitems">Closed</li>
+              </ul>
+            </div>
+
+            
+            <div class="col-md-12 red1">
+              <h5>Clinic Contact</h5>
+              <h6 class="red">Email:</h6>
+              <p>2avedental@gmail.com</p>
+            </div>
+
+            <div class="col-md-12">      
+              <h6 class="red">Phone:</h6>
+              <p>(306) 966-5225</p>
+            </div>
+          </div>
+          </div>
+        </div>
+        </div>
+
+
+    <footer>
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-sm-6 foot">
+              <h3>QUICK LINKS</h3>
+              <ul>
+                <li class="links"><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="appointment.html">Request Appointment</a></li>
+                <li><a href="#">Privacy policy</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 foot">
+              <h3>HOURS OF OPERATION</h3>
+              <ul class="days">
+                <li class="listitem1">Monday</li>
+                <li class="listitem1">Tuesday</li>
+                <li class="listitem1">Wednesday</li>
+                <li class="listitem1">Thursday</li>
+                <li class="listitem1">Friday</li>
+                <li class="listitem1">Weekends</li>
+              </ul>
+              <ul class="times">
+                <li class="listitem">8:00am - 7:00pm</li>
+                <li class="listitem">8:00am - 7:00pm</li>
+                <li class="listitem">8:00am - 7:00pm</li>
+                <li class="listitem">8:00am - 7:00pm</li>
+                <li class="listitem">9:00am - 5:00pm</li>
+                <li class="listitem">Closed</li>
+              </ul>
+            </div>
+
+            <div class="col-lg-2 col-sm-6 foot">
+              <h3>FOLLOW US</h3>
+              <ul>
+                <li><i class="fa fa-facebook-square" aria-hidden="true""></i> <a href="https://www.facebook.com/">Facebook</a></li>
+                <li><i class="fa fa-instagram"></i> <a href="https://www.instagram.com/">Instagram</a></li>
+                <li><i class="fa fa-twitter"></i> <a href="https://www.twitter.com/">Twitter</a></li>
+                <li><i class="fa fa-google"></i> <a href="https://www.googleplus.com/">Google</a></li>
+                <li><i class="fa fa-youtube"></i> <a href="https://www.youtube.com/">Youtube</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+              <div class="address">
+                <h3>CONTACT INFORMATION</h3>
+                <p><i class="fa fa-home fa-lg mr-3"></i> 2nd Avenue Saskatoon, Sk</p>
+                <p><i class="fa fa-envelope fa-md mr-3"></i> 2avedental@gmail.com</p>
+                <p><i class="fa fa-phone fa-lg mr-2"></i> +1 (306) 966-5225</p>
+                <p><i class="fa fa-print fa-lg mr-2"></i> +1 (306) 258-5493</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center mb-2">
+                &copy; 2021 2nd Avenue Dental. All Rights Reserved
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  </body>
+</html>

@@ -1,0 +1,314 @@
+body {
+  background-color: #eeeded;
+}
+
+.navbar{
+  background-color: #bfc4d3;
+}
+
+.navbar .nav-link {
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.navbar .nav-link:hover{
+  color: white;
+}
+
+.navbar-collapse.in {
+  display: block !important;
+}
+
+.navbar .nav-item.current {
+  border-left: #444 3px solid;
+}
+
+#cur {
+  color: black;
+  font-weight: bold;
+}
+
+footer {
+  background: #bfc4d3;
+  font-size: 14px;
+}
+
+footer .footer-top {
+  padding: 35px 0px 25px;
+}
+
+footer .address p {
+  font-size: 16px;
+  color: black;
+  margin-left: 5px;
+}
+
+footer h3 {
+  font-size: 24px;
+  color: #08266d;
+  padding-bottom: 12px;
+}
+
+footer .foot ul {
+  list-style: none;
+  padding: 0;
+  /* margin: 0; */
+}
+
+footer .foot ul li {
+  margin-bottom: 10px;
+}
+
+
+footer .foot ul a {
+  color: black;
+  text-decoration: none;
+  font-size: medium;
+  padding: 1.5px;
+}
+
+footer .foot ul a:hover {
+  color: white;
+}
+
+
+.footer-bottom {
+  background-color: #838eaf;
+  border-top: black 2px solid;
+  padding: 20px 0px;
+}
+
+footer .footer-bottom {
+  color: black;
+  text-decoration: none;
+}
+
+.cl{
+  margin-left: -90px;
+}
+#cl{
+  margin-left: -90px;
+}
+
+.days {
+  border-right: black solid 3px;
+  width: 90px;
+  height: 180.5px;
+  float: left;
+}
+
+.day {
+  border-right: black solid 3px;
+  width: 130px;
+  height: 150px;
+  margin-left: -32px;
+  float: left;
+  }
+
+.time {
+  /* width: 130px;
+  height: 180px; */
+  display: inline-block;
+}
+
+.times {
+  width: 130px;
+  height: 180px;
+  display: inline-block;
+}
+
+.listitems1 {
+  list-style: none;
+  padding-left: 1.5px;
+}
+
+.listitems {
+  list-style: none;
+  padding-left: 2px;
+}
+
+.listitem1 {
+  padding-left: 1.5px;
+  border-bottom: black solid 1px;
+}
+
+.listitem {
+  padding-left: 10px;
+  border-bottom: black solid 1px;
+}
+
+hr.solid {
+  margin-top: 25px;
+  border-top: 2px solid black;
+}
+
+.stuff {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.sss{
+    display: flex;
+  justify-content: center;
+}
+
+.forms {
+  display: flex;
+  justify-content: center;
+}
+
+.ast {
+  margin-left: 175px;
+}
+
+.mark {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: white;
+  color: tomato;
+}
+
+.left {
+  background-color: white;
+}
+
+.space{
+  margin-bottom: 20px;
+}
+
+.dec{
+  margin-left: -2px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+#ser{
+  text-align: center;
+}
+
+.box {
+  padding: 32px;
+  margin: 15px;
+  box-shadow: 0 0 25px 0 rgba(31, 45, 61, 0.125);
+}
+
+.box h5 {
+  color: #20247b;
+  font-weight: 600;
+}
+
+.smt{
+  width: 45px;
+  height: 45px;
+  margin-bottom: 10px;
+}
+
+.box:hover {
+  background-color: #20247b;
+}
+
+.box:hover h5 {
+  color: #FFCC66;
+}
+
+.box:hover p {
+  color: #ee9f00;
+}
+
+.box .icon {
+  width: 65px;
+  height: 62px;
+  line-height: 65px;
+  background: #ffce6d;
+  text-align: center;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.red{
+  margin-bottom: -3px;
+}
+
+.red1{
+  margin-bottom: -5px;
+}
+
+.red2{
+  margin-left: -2px;
+}
+
+.carousel-item {
+  height: 500px;
+}
+
+.carousel-image-2 {
+  background: url('../img/c1.png');
+  background-size: cover;
+}
+
+.carousel-image-1 {
+  background: url('../img/c2.png');
+  background-size: cover;
+}
+
+.carousel-image-3 {
+  background: url('../img/c4.png');
+  background-size: cover;
+}
+
+.carousel-image-4 {
+  background: url('../img/c5.png');
+  background-size: cover;
+}
+
+.carousel-image-5 {
+  background: url('../img/c3.png');
+  background-size: cover;
+}
+
+
+.fa {
+  color: black;
+}
+
+.card:hover{
+  background: linear-gradient(90deg, var(--c1, #a1c4fd), var(--c2, #c2e9fb) 51%, var(--c1, #c2e9fb)) var(--x, 0)/ 200%;
+
+  /* background: linear-gradient(90deg, var(--c1, #f6d365), var(--c2, #fda085) 51%, var(--c1, #f6d365)) var(--x, 0)/ 200%; */
+}
+
+.card{
+  border-radius: 1rem;
+  box-shadow: 0 0 25px 0 rgba(31, 45, 61, 0.125);
+}
+
+.col-md-4 {
+  padding: 0 0.5rem
+}
+
+.titl {
+  font-size: 1rem;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.txt {
+  text-align: center;
+  padding: 1rem 2rem;
+  font-size: 0.8rem;
+  color: rgb(0, 0, 0);
+  line-height: 1.4rem
+}
+
+.le{
+  margin-left: -10px;
+}
