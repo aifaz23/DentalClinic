@@ -30,7 +30,8 @@ body {
   font-weight: bold;
 }
 
-footer {
+
+{
   background: #bfc4d3;
   font-size: 14px;
 }
@@ -83,6 +84,11 @@ footer .foot ul a:hover {
 footer .footer-bottom {
   color: black;
   text-decoration: none;
+}
+
+.footer-content !important{
+  display: flex;
+  justify-content: space-between;
 }
 
 .cl{
