@@ -86,11 +86,6 @@ footer .footer-bottom {
   text-decoration: none;
 }
 
-.footer-content !important{
-  display: flex;
-  justify-content: space-between;
-}
-
 .cl{
   margin-left: -90px;
 }
